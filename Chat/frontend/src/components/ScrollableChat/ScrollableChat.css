@@ -1,0 +1,70 @@
+.message-container {
+    max-width: 75%;
+    display: flex;
+}
+
+.message-container .message {
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    word-break: break-word;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column
+}
+
+.message-container .message .msg-time {
+    font-size: 0.7rem;
+    display: block;
+    margin-left: auto;
+    margin-top: 0.3rem;
+}
+
+.message-container .message .username {
+    font-size: 0.7rem;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+}
+
+.message-container img {
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+}
+
+.message-container .img-message {
+    width: 200px;
+    height: 200px;
+}
+
+.message-container .img-message img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.message-container .file-message {
+    max-width: 300px;
+    background-color: var(--bs-gray-200);
+}
+
+.message-container .file-message .filename {
+    display: inline-block;
+    min-width: 180px;
+}
+
+.fa-file-word {
+    color: var(--bs-blue);
+}
+
+.fa-arrow-alt-circle-down {
+    color: var(--bs-gray-600);
+    cursor: pointer;
+}
+
+.fa-paperclip:hover {
+    background-color: var(--bs-gray-300);
+    cursor: pointer;
+}

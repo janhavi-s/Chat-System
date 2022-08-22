@@ -1,0 +1,30 @@
+.mychats {
+    width: 400px;
+    height: calc(100vh - 58px);
+}
+
+.mychats .user {
+    max-width: calc(100% - 56px);
+}
+
+.mychats .search-user .fa-search {
+    transform: scaleX(-1);
+}
+
+.mychats .dropdown-toggle::after {
+    display: none;
+}
+
+.mychats .chat-list {
+    overflow-y: scroll;
+}
+
+.mychats .chat-list .chat {
+    min-height: 69px;
+}
+
+@media screen and (max-width: 767px) {
+    .mychats {
+        width: 100%;
+    }
+}

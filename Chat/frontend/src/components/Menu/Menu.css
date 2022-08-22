@@ -1,0 +1,32 @@
+.main-navbar{
+    background-color: rgb(var(--bs-primary-rgb));
+}
+.main-navbar .container-fluid{
+    align-items: baseline;
+}
+.main-navbar  .navbar-nav .dropdown{
+    margin-left: 1rem;
+}
+.main-navbar  .navbar-nav .nav-link{
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+}
+
+.notification .dropdown-toggle::after {
+    display: none;
+}
+.main-navbar .user img{
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    padding: 2px;
+    border: 1px solid var(--bs-white);
+}
+.main-navbar .user.dropdown-toggle::after {
+    border-bottom-color: var(--bs-white);
+    border-right-color: var(--bs-white);
+}
+.notification .notification-count{
+    font-size: 0.62rem;
+    top: 5px;
+}

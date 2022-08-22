@@ -1,0 +1,50 @@
+.chat-message {
+    width: calc(100% - 400px);
+    height: calc(100vh - 58px);
+}
+
+.typing-indicator {
+    font-size: 0.65rem;
+    font-weight: bold;
+}
+
+.message-wrapper {
+    height: calc(100% - 73px);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 242, 241);
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    justify-content: flex-end;
+}
+
+.messages>div {
+    max-height: none;
+    height: auto;
+}
+
+.attach-file {
+    position: relative;
+}
+
+.attach-file input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.attach-file:hover {
+    background-color: var(--bs-gray-300);
+}
+
+@media screen and (max-width: 767px) {
+    .chat-message {
+        width: 100%;
+    }
+}
